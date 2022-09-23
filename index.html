@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+
+
+    <title>Portfolio</title>
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Portfolio</div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About Me</a></li>
+                <li class="services" id="project">
+                    <a href="#project">Projects</a>
+
+                    <ul class="dropdown">
+                        <li><a target="_blank " href="https://minor-project-sanchit.netlify.app/">Tic-Tac-Toe</a></li>
+                        <li><a target="_blank " href="">Quote Machine</a></li>
+                        <li><a href="https://karlex1.github.io/Box-officee/#/" target="_blank ">Box-Office</a></li>
+                        <li><a href="https://expensetracker456.netlify.app/" target="_blank ">Expense Tracker</a></li>
+                    </ul>
+                </li>
+                <li><a href="#footer">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="slider">
+        <figure>
+            <img src="https://wallpaperaccess.com/full/383185.png" />
+            <img
+                src="https://quotefancy.com/media/wallpaper/3840x2160/1964023-Joel-Spolsky-Quote-Listen-to-your-customers-not-your-competitors.jpg">
+            <img src="https://wallpapercave.com/wp/wp9364113.jpg" />
+
+        </figure>
+    </div>
+
+
+    <div id="about">
+        <h2 align="center " class="mb-2 heading-about">About Me</h2>
+
+
+        <p class="p-2 pb-1"> Hello There,<br>
+            &nbsp;&nbsp; My name is Sanchit. I'm a web developer (front-end), Freelance Web developer.
+            <br>
+
+        </p>
+        <h2 class="sub-heading ">Educational Qualification</h2>
+
+        <p class="sub-para"> Currently I'm persuing 3rd year of my diploma in Infomation Technology which is equivalent
+            to 12th.
+            After this I'm planning to complete my Graduation {b.tech in cs}.
+        </p>
+
+        <div class="sub-para">.</div>
+        <div class="skill ml-3 mr-3">
+            <h3 class="sub-heading but " align="center"> Skills</h3>
+            <div class="d-flex justify-content-between">
+                <div class="ml2-3 ">
+                    <h4 class="sub-heading">Frontend Skill</h4>
+                    <ul class="sub-para">
+                        <li>
+                            React.js
+                        </li>
+                        <li>
+                            Javascript
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            Bootstrap
+                        </li>
+                    </ul>
+                </div>
+                <div class="mr2-3">
+                    <h4 class="sub-heading">Backend Skill</h4>
+                    <ul class="sub-para">
+                        <li>
+                            Node.js
+                        </li>
+
+                        <li>
+                            Django
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="mr2-3">
+                    <h4 class="sub-heading">Database Skill</h4>
+                    <ul class="sub-para">
+                        <li>
+                            MangoDB
+                        </li>
+
+                        <li>
+                            Mysql
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between      progressbar">
+        <div class="ml21-3">
+            <h3 class="sub-heading ">Frontend</h3>
+            <h6 class="progress-title">React.js</h6>
+            <div class="progress purple">
+                <div class="progress-bar" style="width:60%; ">
+                    <div class="progress-value" align="center">60%</div>
+                </div>
+            </div>
+            <h6 class="progress-title">Javascript</h6>
+            <div class="progress violet">
+                <div class="progress-bar" style="width:70%; ">
+                    <div class="progress-value" align="center">70%</div>
+                </div>
+            </div>
+            <h6 class="progress-title">CSS3</h6>
+            <div class="progress blue">
+                <div class="progress-bar" style="width:80%; ">
+                    <div class="progress-value" align="center">80%</div>
+                </div>
+            </div>
+
+            <h6 class="progress-title">HTML5</h6>
+            <div class="progress orange">
+                <div class="progress-bar" style="width:90%; ">
+                    <div class="progress-value" align="center">90%</div>
+                </div>
+            </div>
+            <h6 class="progress-title">Bootstrap</h6>
+            <div class="progress baingan">
+                <div class="progress-bar" style="width:60%;">
+                    <div class="progress-value" align="center">60%</div>
+                </div>
+            </div>
+        </div>
+        <div class="ml21-3">
+            <h3 class="sub-heading ">Backend</h3>
+
+
+            <h6 class="progress-title">Node.js</h6>
+            <div class="progress green">
+                <div class="progress-bar" style="width:15%; ">
+                    <div class="progress-value" align="center">15%</div>
+                </div>
+            </div>
+
+            <h6 class="progress-title">Django</h6>
+            <div class="progress yellow">
+                <div class="progress-bar" style="width:4%; ">
+                    <div class="progress-value" align="center">0%</div>
+                </div>
+            </div>
+        </div>
+        <div class="ml21-3">
+            <h3 class="sub-heading ">Database</h3>
+            <h6 class="progress-title">Mysql</h6>
+            <div class="progress purple">
+                <div class="progress-bar" style="width:60%; ">
+                    <div class="progress-value" align="center">60%</div>
+                </div>
+            </div>
+            <h6 class="progress-title">MangoDB</h6>
+            <div class="progress sky">
+                <div class="progress-bar" style="width:4%; ">
+                    <div class="progress-value" align="center">0%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer id="footer">
+    <div class="footer-content">
+        <h3>Sanchit</h3>
+        <p><a href="/"> Portfolio </a></p>
+        <ul class="socials">
+            <li><a href="tel:9161499879"><i class="fa fa-phone-square" target="_blank"></i></a></li>
+            <li><a href="https://twitter.com/Sanchit_coder" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/developer_karlex/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sanchit-312928214/" target="_blank"><i class="fa fa-linkedin-square" target="_blank"></i></a></li>
+            <li><a href="mailto:sanchit959871@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+
+        <div class="footer-menu" align="center">
+            <ul class="f-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy;2022 </p>
+        <h6 class="creater">Created by @Sanchit(KARLeX)</h6>
+      
+    </div>
+</footer>
+</body>
+</html>

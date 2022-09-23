@@ -1,0 +1,235 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* prograss bar */
+        .progress-title {
+
+            font-weight: 625;
+            color: rgb(36, 10, 10);
+            text-transform: uppercase;
+            margin: 0.6rem 0.3rem 0.7rem;
+        }
+
+        .progress {
+            height: 6px;
+            background: #817d7d;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            overflow: visible;
+            position: relative;
+        }
+
+        .progress:before,
+        .progress:after {
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 100%;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: -5px;
+
+            z-index: 1;
+        }
+
+        .progress:after {
+            border: 7px solid #c2c2c2;
+            left: auto;
+            right: 0;
+        }
+
+        .progress .progress-bar {
+            box-shadow: none;
+            border: none;
+            border-radius: 15px;
+            position: relative;
+            -webkit-animation: animate-positive 1s;
+            animation: animate-positive 1s;
+        }
+
+        .progress .progress-value {
+            width: 70px;
+            height: 35px;
+            line-height: 22px;
+            border-radius: 120px;
+            background: #fff;
+            font-weight: 600;
+            position: absolute;
+            top: -12px;
+            right: 0;
+            z-index: 2;
+        }
+
+        .progress.orange:before {
+            border: 7px solid #e27171;
+        }
+
+        .progress.blue:before {
+            border: 7px solid #1e99e6;
+        }
+
+        .progress.green:before {
+            border: 7px solid #a5ff7b;
+        }
+
+        .progress.purple:before {
+            border: 7px solid #66406f;
+        }
+
+        .progress.violet:before {
+            border: 7px solid #b453bd;
+        }
+
+        .progress.baingan:before {
+            border: 7px solid #efaaff;
+        }
+
+        .progress.sky:before {
+            border: 7px solid #81c9d3;
+        }
+
+        .progress.yellow:before {
+            border: 7px solid #c0ca30c4;
+        }
+
+        .progress.orange .progress-value {
+            border: 5px solid #fe3b3b;
+            color: #0f0101;
+            margin-left: 34rem;
+        }
+
+        .progress.blue .progress-value {
+            border: 5px solid #1a4966;
+            color: #1a4966;
+        }
+
+        .progress.green .progress-value {
+            border: 5px solid #8af05b;
+            color: #46a01c;
+        }
+
+        .progress.purple .progress-value {
+            border: 5px solid #66406f;
+            color: #66406f;
+        }
+
+        .progress.violet .progress-value {
+            border: 5px solid #b453bd;
+            color: #d68bdd;
+        }
+
+        .progress.baingan .progress-value {
+            border: 5px solid #66406f;
+            color: #66406f;
+        }
+
+        .progress.sky .progress-value {
+            border: 5px solid #86b8c7;
+            color: #4d939cd3;
+        }
+
+        .progress.yellow .progress-value {
+            border: 5px solid #c8d32d;
+            color: #b8c22dcb;
+        }
+
+        @-webkit-keyframes animate-positive {
+            0% {
+                width: 0;
+            }
+        }
+
+        @keyframes animate-positive {
+            0% {
+                width: 0;
+            }
+        }
+
+        .ml21-3 {
+
+            width: 95%;
+            margin: 0 5% 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="d-flex justify-content-between      progressbar">
+        <div class="ml21-3">
+            <h3 class="sub-heading ">Frontend</h3>
+            <h6 class="progress-title">React.js</h6>
+            <div class="progress purple">
+                <div class="progress-bar" style="width:60%; ">
+                    <div class="progress-value" align="center">60%</div>
+                </div>
+            </div>
+            <h6 class="progress-title">Javascript</h6>
+            <div class="progress violet">
+                <div class="progress-bar" style="width:70%; ">
+                    <div class="progress-value" align="center">70%</div>
+                </div>
+            </div>
+            <h6 class="progress-title">CSS3</h6>
+            <div class="progress blue">
+                <div class="progress-bar" style="width:80%; ">
+                    <div class="progress-value" align="center">80%</div>
+                </div>
+            </div>
+
+            <h6 class="progress-title">HTML5</h6>
+            <div class="progress orange">
+                <div class="progress-bar" style="width:90%; ">
+                    <div class="progress-value" align="center">90%</div>
+                </div>
+            </div>
+            <h6 class="progress-title">Bootstrap</h6>
+            <div class="progress baingan">
+                <div class="progress-bar" style="width:60%;">
+                    <div class="progress-value" align="center">60%</div>
+                </div>
+            </div>
+        </div>
+        <div class="ml21-3">
+            <h3 class="sub-heading ">Backend</h3>
+
+
+            <h6 class="progress-title">Node.js</h6>
+            <div class="progress green">
+                <div class="progress-bar" style="width:15%; ">
+                    <div class="progress-value" align="center">15%</div>
+                </div>
+            </div>
+
+            <h6 class="progress-title">Django</h6>
+            <div class="progress yellow">
+                <div class="progress-bar" style="width:4%; ">
+                    <div class="progress-value" align="center">0%</div>
+                </div>
+            </div>
+        </div>
+        <div class="ml21-3">
+            <h3 class="sub-heading ">Database</h3>
+            <h6 class="progress-title">Mysql</h6>
+            <div class="progress purple">
+                <div class="progress-bar" style="width:60%; ">
+                    <div class="progress-value" align="center">60%</div>
+                </div>
+            </div>
+            <h6 class="progress-title">MangoDB</h6>
+            <div class="progress sky">
+                <div class="progress-bar" style="width:4%; ">
+                    <div class="progress-value" align="center">0%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
